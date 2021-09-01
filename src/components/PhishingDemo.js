@@ -34,6 +34,7 @@ function PhishingDemo() {
         />
         <button id='submitButton'>Submit</button>
       </form>
+      <p>Go back to the original tab</p>
     </div>
   );
 }

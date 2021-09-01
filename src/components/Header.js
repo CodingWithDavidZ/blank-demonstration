@@ -8,13 +8,13 @@ function Header() {
         Home
       </Link>
       <Link className='navLinks' to='/blank'>
-        Normal Blank
+        Normal blank
       </Link>
       <Link className='navLinks' to='/saferblank'>
-        Safer Blank
+        Safer blank
       </Link>
       <Link className='navLinks' to='/badblank'>
-        Bad Blank
+        Bad blank
       </Link>
     </div>
   );

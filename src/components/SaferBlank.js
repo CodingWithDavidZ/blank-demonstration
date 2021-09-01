@@ -12,9 +12,7 @@ function SaferBlank() {
     </a>
   );
 
-  const strong = (
-    <pre className='pre'>target='_blank' rel='noopener noreferrer'</pre>
-  );
+  const strong = <pre className='pre'>target='_blank' rel='noreferrer'</pre>;
 
   const blank = <pre className='pre'>target='blank'</pre>;
   return (

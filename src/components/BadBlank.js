@@ -1,39 +1,36 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
-function BadBlank() {
+function BadBlank({ setChangePage, changePage }) {
   const googleBlank = (
-    <a href='https://Google.com' target='_blank'>
+    <a href='https://Google.com' target='_blank' rel='noreferrer'>
       Google
     </a>
   );
   const mediumBlank = (
-    <a href='https://medium.com/' target='_blank'>
+    <a href='https://medium.com/' target='_blank' rel='noreferrer'>
       Medium
     </a>
   );
 
-  const badBlank = (
-    <a href='https://medium.com/' target='_blank'>
-      Phishing Link
-    </a>
-  );
+  function simulatePhishing() {
+    setChangePage(!changePage);
+  }
 
   const hijack = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
 
   const strong = <pre className='pre'>target='_blank'</pre>;
-  const safer = <pre className='pre'>rel='noopener noreferrer'</pre>;
-  const blank = <pre className='pre'>target='blank'</pre>;
+  const safer = <pre className='pre'>rel='noreferrer'</pre>;
+
   return (
     <div>
-      <script>window.opener.location.href = {hijack}</script>
       <h1 id='blank-links'>
         Click on a link, then return to this page and click on the other links.
       </h1>
       <ul>{googleBlank}</ul>
       <ul>{mediumBlank}</ul>
       <ul>
-        <Link to='/phishingdemo' target='_blank'>
+        <Link to='/phishingdemo' target='_blank' onClick={simulatePhishing}>
           Phishing Demo
         </Link>
       </ul>

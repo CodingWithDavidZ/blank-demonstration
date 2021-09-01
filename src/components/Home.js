@@ -1,9 +1,7 @@
 import React from 'react';
 
 const blank = <pre className='pre'>target='blank'</pre>;
-const saferBlank = (
-  <pre className='pre'>target= '_blank' rel='noopener noreferrer'</pre>
-);
+const saferBlank = <pre className='pre'>target= '_blank' rel='noreferrer'</pre>;
 const badBlank = <pre className='pre'>target='_blank'</pre>;
 
 const list = (

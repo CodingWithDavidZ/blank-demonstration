@@ -25,6 +25,7 @@ function Blank() {
         previous. This is how: {strong} works. One can see how this could be
         frustrating for a user if there are multiple links on a page.
       </p>
+      <p>Now try the links in "Safer blank"</p>
     </div>
   );
 }

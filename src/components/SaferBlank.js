@@ -28,6 +28,7 @@ function SaferBlank() {
         works. This provides a much more pleasant and safer experiance for users
         when there are many links on a page.
       </p>
+      <p>Now try the links in "Bad blank"</p>
     </div>
   );
 }

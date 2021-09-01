@@ -19,6 +19,7 @@ function Home() {
         Welcome to this demo of how the following work: {list} Click the links
         at the top for a demo of how each work.
       </p>
+      <p>Start with "Normal blank"</p>
     </div>
   );
 }
